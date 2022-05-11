@@ -18,6 +18,9 @@
 		<h1>CS184 Final Project: Realistic Firework Particle Simulation</h1>
 		<h2>Frank Cuoco :: Lucas Huang :: Manh Khang (Ryan) Le :: Haoshen (Ken) Ouyang</h2>
 		<img src='./images/fireworkoverwater.jpg'>
+		<h2>Final Project Video</h2>
+		<p><iframe src="https://drive.google.com/file/d/1vPGgtze8TWe3--gU6zJTKTZcdP53LTnU/preview" width="640" height="360"
+				allow="autoplay"></iframe></p>
 		<h2>Abstract</h2>
 		<p>In this project, we created an interactive realistic particle-based firework simulation that contains two main modes.
 		“Music Mode” turns your keyboard into a musical firework piano, where each key within “ASDFGHJK” is tied to a
@@ -32,15 +35,15 @@
 		<img src='./images/equation-e.png'>
 		<p>In our simulation, we primarily focused on the drag force on our particles, creating an accurate representation of particle trajectory. This is modeled using the equation</p>
 		<img src='./images/equation-v.png'>
-		<p>where C_D is the drag coefficient, p_a is the density of air, p is the density of pyrotechnic display material, R is the
-		radius of the shell, r_in is the outward normal position of the particle, and r_oin is the initial distance between the
+		<p>where C<sub>D</sub> is the drag coefficient, p<sub>a</sub> is the density of air, p is the density of pyrotechnic display material, R is the
+		radius of the shell, r<sub>in</sub> is the outward normal position of the particle, and r<sub>oin</sub> is the initial distance between the
 		particle and inner detonation shell. This equation balances accuracy of the firework simulation with calculations
 		involved per iteration. A constant drag coefficient is assumed, and the force of drag is assumed to significantly
 		outweigh force of air and buoyancy at the speeds of the particles in calm air conditions.</p>
 		<p>Before the deflagration of the fireworks, firework shells are shot into the air and explode when reaching their high
 		point. The vertical position of the particle over time may be found using the equation</p>
 		<img src='./images/equation-y.png'>
-		<p>where our acceleration a is an approximated gravitational acceleration g = -10 m/s^2. For the simulation of the shell,
+		<p>where our acceleration a is an approximated gravitational acceleration g = -10 m/s<sup>2</sup>. For the simulation of the shell,
 		Euler's method is used to create an approximation of movement. As our acceleration is constant and we are using the
 		calculations for a short one-dimensional segment, we avoid the error accumulation present from the method.</p>
 		<h3>Music Notes</h3>
